@@ -21,9 +21,9 @@
 
                 <a href="#" class="text-center">
                     @if($profile->account->amount > 1500)
-                        <button type="button" class="btn btn-warning btn-lg" data-toggle='modal' data-target='#myModal'>Transfer Credit</button>
+                        <button type="button" class="btn btn-success btn-lg" id="change" data-toggle='modal' data-target='#myModal'>Transfer Credit</button>
                     @else
-                        <button type="button" class="btn btn-danger btn-lg" data-toggle='modal' data-target='#myModal'>Transfer Credit</button>
+                        <button type="button" class="btn btn-danger btn-lg" id="change" data-toggle='modal' data-target='#myModal'>Transfer Credit</button>
                     @endif
 
                     @if(Session::has('message'))
@@ -58,3 +58,11 @@
     </div>
 </div>
 @endsection
+
+<style type="text/css">
+   #change:hover{
+    background-color: #FFFF33;
+    color: black;
+   } 
+</style>
+
