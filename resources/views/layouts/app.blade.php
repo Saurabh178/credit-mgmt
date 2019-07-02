@@ -19,7 +19,6 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body style="background-image: url(https://cdn.pixabay.com/photo/2016/02/17/13/28/workbook-1205044_960_720.jpg); background-repeat: no-repeat; background-size: 100%">
     <div id="app">
         
 
