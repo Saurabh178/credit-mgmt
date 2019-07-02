@@ -6,7 +6,7 @@
 			<option value="none">Select</option>
 			@foreach($profiles as $user)
 				@if($user->id != $profile->id)
-					<option value="{{$user->name}}">{{$user->name}}</option>
+					<option value="{{$user->name}}">{{$user->name}} (Id: {{$user->id}})</option>
 				@endif
 			@endforeach
 		</select>
