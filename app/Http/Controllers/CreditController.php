@@ -97,6 +97,7 @@ class CreditController extends Controller
 
             DB::update('update accounts set amount = amount - ? where profile_id = ?', [$amount, $id]);
             DB::update('update accounts set amount = amount + ? where profile_id = ?', [$amount, $reciever_id[0]]);
+            $reciever_name = DB::table('profiles')->where('id', $reciever_id[0])->pluck('name');
 
             $amount_value_sender = DB::table('accounts')->where('profile_id', $id)->pluck('amount');
             $amount_value_reciever = DB::table('accounts')->where('profile_id', $reciever_id[0])->pluck('amount');
@@ -119,7 +120,7 @@ class CreditController extends Controller
                 DB::update('update accounts set remark = ? where profile_id = ?', ['Sufficient Balance!', $reciever_id[0]]);
             }
 
-            return redirect()->to('/view_user/'.$id);
+            return redirect()->to('/view_user/'.$id)->with('message', 'Credit Successfully Transfered to '.$reciever_name[0].'.');
         }   
         else
         {
