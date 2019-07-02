@@ -20,7 +20,7 @@
                 </div>
 
                 <a href="#" class="text-center">
-                    @if($profile->account->amount > 1500)
+                    @if($profile->account->amount > 5000)
                         <button type="button" class="btn btn-success btn-lg" id="change" data-toggle='modal' data-target='#myModal'>Transfer Credit</button>
                     @else
                         <button type="button" class="btn btn-danger btn-lg" id="change" data-toggle='modal' data-target='#myModal'>Transfer Credit</button>
