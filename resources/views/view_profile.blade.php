@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card" style="background-image: url(https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
                 <div class="card-header">
                     <a href="#" style="font-size: 20px;">Account Information!</a>
                     <a href="{{route('display_all')}}" style="font-size: 20px; float: right;">All User's</a>
