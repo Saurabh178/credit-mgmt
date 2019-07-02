@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-xs-8">
-            <div class="card">
+            <div class="card" style="background-image: url(https://images.pexels.com/photos/2116/money-gold-coins-finance.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
                 <div class="card-header">All Users</div>
 
                 <div class="card-body">
